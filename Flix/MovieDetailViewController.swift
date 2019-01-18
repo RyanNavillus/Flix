@@ -14,6 +14,8 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var underlineView: UIView!
     @IBOutlet weak var imageHeight: NSLayoutConstraint!
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var movie: Movie? {
         didSet {
@@ -26,6 +28,7 @@ class MovieDetailViewController: UIViewController {
         super.viewDidLoad()
         setupDetail()
         setSize()
+        
     }
     
     func setupDetail() {
@@ -40,6 +43,11 @@ class MovieDetailViewController: UIViewController {
         if let color = color {
             underlineView.backgroundColor = color
         }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+                scrollView.contentSize = CGSize(width: contentView.frame.width, height: contentView.frame.height+32)
     }
     
     func setSize() {
