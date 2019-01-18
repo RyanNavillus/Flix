@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.8.1)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - SwiftLint (0.25.1)
+  - UIImageColors (2.0.1)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 3.4)
+  - SwiftLint
+  - UIImageColors
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - SwiftLint
+    - UIImageColors
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+  UIImageColors: c83669aff7ceb55a3b3f2c398f3b5c14632a267b
+
+PODFILE CHECKSUM: 08b110c091c5b2f0156adbcc80e62b777a2353dc
+
+COCOAPODS: 1.5.3
