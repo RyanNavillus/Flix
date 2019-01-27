@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Movie Table View Controller-->
+        <!--Item-->
         <scene sceneID="deB-jW-PGd">
             <objects>
                 <tableViewController id="YJ1-Er-9iu" customClass="MovieTableViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,11 +82,63 @@
                             <outlet property="delegate" destination="YJ1-Er-9iu" id="HzN-Yj-h4n"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="IJI-km-brT"/>
                     <navigationItem key="navigationItem" id="ge7-9S-cUp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ay3-io-ZXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1920.8" y="805.54722638680664"/>
+            <point key="canvasLocation" x="2860" y="805.54722638680664"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Irv-AL-pOy">
+            <objects>
+                <collectionViewController id="dyy-87-Fvm" customClass="MovieCollectionViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="SgK-rM-oRW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1ML-B4-HhK">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionCell" id="M8B-R5-YUz" customClass="MovieCollectionViewCell" customModule="Flix" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EUP-NZ-xuo">
+                                            <rect key="frame" x="0.0" y="0.0" width="177" height="224"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EUP-NZ-xuo" firstAttribute="height" secondItem="M8B-R5-YUz" secondAttribute="height" id="3c4-CT-Rio"/>
+                                    <constraint firstItem="EUP-NZ-xuo" firstAttribute="width" secondItem="M8B-R5-YUz" secondAttribute="width" id="3fl-bq-jCy"/>
+                                    <constraint firstItem="EUP-NZ-xuo" firstAttribute="centerY" secondItem="M8B-R5-YUz" secondAttribute="centerY" id="53R-C6-587"/>
+                                    <constraint firstItem="EUP-NZ-xuo" firstAttribute="centerX" secondItem="M8B-R5-YUz" secondAttribute="centerX" id="SfM-jd-5Nc"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="movieImageView" destination="EUP-NZ-xuo" id="cmU-lT-QRb"/>
+                                    <segue destination="Chi-6C-hP8" kind="show" id="lqY-BZ-1VM"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="dyy-87-Fvm" id="Xhu-0t-0Yr"/>
+                            <outlet property="delegate" destination="dyy-87-Fvm" id="QpI-dA-zMh"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Item" id="uB8-4Z-kNe"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbz-Nd-dZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2860" y="1477.5112443778112"/>
         </scene>
         <!--Movie Detail View Controller-->
         <scene sceneID="I4x-1f-jwl">
@@ -160,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbU-IQ-RQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2856.8000000000002" y="802.848575712144"/>
+            <point key="canvasLocation" x="3796" y="802.848575712144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8gf-0S-e4y">
@@ -174,12 +226,34 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="YJ1-Er-9iu" kind="relationship" relationship="rootViewController" id="kfR-Wj-TKV"/>
+                        <segue destination="jfr-Dp-Ybp" kind="relationship" relationship="rootViewController" id="kfR-Wj-TKV"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtV-qY-4Mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="981.60000000000002" y="805.54722638680664"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0Vw-Oi-eL2">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jfr-Dp-Ybp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="dnC-9y-6SV"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KhU-Fc-qQL">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YJ1-Er-9iu" kind="relationship" relationship="viewControllers" id="pHO-nd-GKH"/>
+                        <segue destination="dyy-87-Fvm" kind="relationship" relationship="viewControllers" id="xQQ-gp-NwE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRY-bE-HdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920.8" y="805.54722638680664"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lqY-BZ-1VM"/>
+    </inferredMetricsTieBreakers>
 </document>

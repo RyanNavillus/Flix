@@ -12,6 +12,8 @@
 		6E4D20F821ED5AED00EC9558 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D20F721ED5AED00EC9558 /* MovieTableViewCell.swift */; };
 		6E4D20FA21ED5B0600EC9558 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D20F921ED5B0600EC9558 /* MovieDetailViewController.swift */; };
 		6E4D20FC21ED777500EC9558 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D20FB21ED777500EC9558 /* Movie.swift */; };
+		6E68A6BE21FBAF320048D570 /* MovieCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E68A6BD21FBAF320048D570 /* MovieCollectionViewController.swift */; };
+		6E68A6C021FBAF530048D570 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E68A6BF21FBAF530048D570 /* MovieCollectionViewCell.swift */; };
 		6EC657A021ED4F80003BF9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6579F21ED4F80003BF9DC /* AppDelegate.swift */; };
 		6EC657A521ED4F80003BF9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC657A321ED4F80003BF9DC /* Main.storyboard */; };
 		6EC657A721ED4F82003BF9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC657A621ED4F82003BF9DC /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		6E4D20F721ED5AED00EC9558 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		6E4D20F921ED5B0600EC9558 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		6E4D20FB21ED777500EC9558 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6E68A6BD21FBAF320048D570 /* MovieCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewController.swift; sourceTree = "<group>"; };
+		6E68A6BF21FBAF530048D570 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		6EC6579C21ED4F80003BF9DC /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC6579F21ED4F80003BF9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EC657A421ED4F80003BF9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,9 +127,11 @@
 				6EC6579F21ED4F80003BF9DC /* AppDelegate.swift */,
 				6EC657A321ED4F80003BF9DC /* Main.storyboard */,
 				6E4D20F521ED5AE100EC9558 /* MovieTableViewController.swift */,
-				6E4D20FB21ED777500EC9558 /* Movie.swift */,
 				6E4D20F721ED5AED00EC9558 /* MovieTableViewCell.swift */,
+				6E68A6BD21FBAF320048D570 /* MovieCollectionViewController.swift */,
+				6E68A6BF21FBAF530048D570 /* MovieCollectionViewCell.swift */,
 				6E4D20F921ED5B0600EC9558 /* MovieDetailViewController.swift */,
+				6E4D20FB21ED777500EC9558 /* Movie.swift */,
 				6E4D20F321ED545700EC9558 /* FlixAPIManager.swift */,
 				6EC657A621ED4F82003BF9DC /* Assets.xcassets */,
 				6EC657A821ED4F82003BF9DC /* LaunchScreen.storyboard */,
@@ -335,9 +341,11 @@
 				6E4D20F821ED5AED00EC9558 /* MovieTableViewCell.swift in Sources */,
 				6E4D20F621ED5AE100EC9558 /* MovieTableViewController.swift in Sources */,
 				6E4D20FC21ED777500EC9558 /* Movie.swift in Sources */,
+				6E68A6BE21FBAF320048D570 /* MovieCollectionViewController.swift in Sources */,
 				6E4D20F421ED545700EC9558 /* FlixAPIManager.swift in Sources */,
 				6E4D20FA21ED5B0600EC9558 /* MovieDetailViewController.swift in Sources */,
 				6EC657A021ED4F80003BF9DC /* AppDelegate.swift in Sources */,
+				6E68A6C021FBAF530048D570 /* MovieCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
