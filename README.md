@@ -38,7 +38,8 @@ Describe any challenges encountered while building the app.
 
 ### App Walkthough GIF
 
-<img src="https://i.imgur.com/Rze8ovt.mp4" width=250><br>
+[Imgur demo](https://i.imgur.com/Rze8ovt.gifv "Imgur")
+
 
 ### Notes
 The required features were pretty easy, I mostly had difficulty with the extra features
